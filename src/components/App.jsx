@@ -1,16 +1,22 @@
+import Button from "./Button/Button";
+import ImageGallery from "./ImageGallery/ImageGallery";
+import ImageGalleryItem from "./ImageGalleryItem/ImageGalleryItem";
+import Loader from "./Loader/Loader";
+import Modal from "./Modal/Modal";
+import Searchbar from "./Searchbar/Searchbar";
+import css from 'components/styles.css'
+
+// Your API key: 39445880-54b6798b916331fa60d6cbc62
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Button />
+      <ImageGallery />
+      <ImageGalleryItem />
+      <Loader />
+      <Modal />
+      <Searchbar/>
     </div>
   );
 };
