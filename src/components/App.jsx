@@ -11,7 +11,12 @@ import css from 'components/styles.css'
 export const App = () => {
   return (
     <div>
-      <p>Hello bro</p>
+      <ButtonItem />
+      <ImageGallery />
+      <ImageGalleryItem />
+      <Loader />
+      <Modal />
+      <Searchbar/>
     </div>
   );
 };
