@@ -1,9 +1,9 @@
-import ButtonItem from "./Button/Button";
-import ImageGallery from "./ImageGallery/ImageGallery";
-import ImageGalleryItem from "./ImageGalleryItem/ImageGalleryItem";
-import Loader from "./Loader/Loader";
-import Modal from "./Modal/Modal";
-import Searchbar from "./Searchbar/Searchbar";
+import ButtonItem from "components/Button/Button";
+import ImageGallery from "components/ImageGallery/ImageGallery";
+import ImageGalleryItem from "components/ImageGalleryItem/ImageGalleryItem";
+import Loader from "components/Loader/Loader";
+import Modal from "components/Modal/Modal";
+import Searchbar from "components/Searchbar/Searchbar";
 import css from 'components/styles.css'
 
 // Your API key: 39445880-54b6798b916331fa60d6cbc62
@@ -11,7 +11,7 @@ import css from 'components/styles.css'
 export const App = () => {
   return (
     <div>
-      Hello bro
+      <p>Hello bro</p>
     </div>
   );
 };
