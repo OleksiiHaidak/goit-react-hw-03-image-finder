@@ -1,4 +1,4 @@
-import Button from "./Button/Button";
+import ButtonItem from "./Button/Button";
 import ImageGallery from "./ImageGallery/ImageGallery";
 import ImageGalleryItem from "./ImageGalleryItem/ImageGalleryItem";
 import Loader from "./Loader/Loader";
@@ -11,7 +11,7 @@ import css from 'components/styles.css'
 export const App = () => {
   return (
     <div>
-      <Button />
+      <ButtonItem />
       <ImageGallery />
       <ImageGalleryItem />
       <Loader />
