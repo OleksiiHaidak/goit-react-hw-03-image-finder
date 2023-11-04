@@ -1,9 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-export default class ImageGalleryItem extends Component {
+export class ImageGalleryItem extends Component {
+  handleClick = () => {
+    this.props.onImageClick(this.props.post);
+  };
+
   render() {
+    const {post} = this.props;
+
     return (
-      <div>ImageGalleryItem</div>
-    )
-  }
-}
+      <li key={post.id} className="ImageGalleryItem">
+        <img src={post.webformatURL} alt={post.tags} onClick={this.handleClick}/>
+      </li>
+    );
+  };
+};

@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
+import React from "react";
 
-export default class ButtonItem extends Component {
-  render() {
-    return (
-      <div></div>
-    )
-  }
-}
+const Button = ({onClick}) => {
+  return (
+    <div className="Button-container">
+         <button type="button" onClick={onClick} className="Button">Load more</button>
+        </div>
+  );
+};
+
+export default Button;

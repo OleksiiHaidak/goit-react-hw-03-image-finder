@@ -76,7 +76,7 @@ img {
   width: 48px;
   height: 48px;
   border: 0;
-  background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
+  background-image: url('https://www.svgrepo.com/show/479485/magnifying-glass-for-search.svg');
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
@@ -138,6 +138,7 @@ img {
  * Стили компонента ImageGalleryItem
  */
 .ImageGalleryItem {
+  cursor: pointer;
   border-radius: 2px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -180,7 +181,13 @@ img {
 /*
 * Стили компонента Buton (Load more)
 */
+
+.Button-container {
+  text-align: center;
+}
+
 .Button {
+  margin: 20px 0 20px 0;
   padding: 8px 16px;
   border-radius: 2px;
   background-color: #3f51b5;
@@ -204,4 +211,13 @@ img {
 .Button:hover,
 .Button:focus {
   background-color: #303f9f;
+}
+
+
+.Loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }

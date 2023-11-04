@@ -1,9 +1,22 @@
-import React, { Component } from 'react'
+import React from "react";
+import { Hourglass } from 'react-loader-spinner'
 
-export default class Loader extends Component {
-  render() {
-    return (
-      <div>Loader</div>
-    )
-  }
-}
+
+const LoadingSpinner = () => {
+  return (
+    <div className="Loader">
+      <Hourglass
+  type="Puff"
+  visible={true}
+  height="80"
+  width="80"
+  ariaLabel="hourglass-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  colors={['#306cce', '#72a1ed']}
+/>
+    </div>
+  );
+};
+
+export default LoadingSpinner;
