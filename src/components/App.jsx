@@ -5,8 +5,9 @@ import Loader from "components/Loader/Loader";
 import Modal from "components/Modal/Modal";
 import Searchbar from "components/Searchbar/Searchbar";
 import fetchImages from "components/FetchImages/fetchImages";
-import css from 'components/styles.css';
 import Notiflix from 'notiflix';
+import { AppStyled } from 'components/App.styled';
+
 
 export class App extends Component {
 
@@ -101,12 +102,12 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
+      <AppStyled>
        <Searchbar onSubmit={this.handleSubmit} posts={this.state.posts}/>
        {this.state.isLoading && <Loader />}
        <ImageGallery posts={this.state.posts} onImageClick={this.handleImageClick}/>
        {this.state.isOpenModal &&  <Modal openModal={this.openModal} closeModal={this.closeModal} modalData={this.state.modalData} />}
        {this.state.posts.length >= 12 && <Button onClick={this.handleClick} />}
-    </div>
+    </AppStyled>
   )}
 };

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import css from 'components/Modal/Modal.module.css';
 
 export default class Modal extends Component {
   componentDidMount() {
@@ -17,8 +18,8 @@ export default class Modal extends Component {
 
   render() {
     return (
-      <div className="Overlay" onClick={this.props.closeModal}>
-  <div className="Modal">
+      <div className={css.Overlay} onClick={this.props.closeModal}>
+  <div className={css.Modal}>
     <img src={this.props.modalData.largeImageURL} alt={this.props.modalData.tags} />
   </div>
 </div>

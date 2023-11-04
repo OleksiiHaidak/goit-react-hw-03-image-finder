@@ -1,10 +1,11 @@
 import React from "react";
 import { Hourglass } from 'react-loader-spinner'
+import css from 'components/Loader/Loader.module.css';
 
 
 const LoadingSpinner = () => {
   return (
-    <div className="Loader">
+    <div className={css.Loader}>
       <Hourglass
   type="Puff"
   visible={true}

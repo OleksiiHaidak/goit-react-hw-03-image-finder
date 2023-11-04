@@ -1,5 +1,4 @@
 import axios from 'axios';
-import Notiflix from 'notiflix';
 
 
 const pixabayApiKey = "39445880-54b6798b916331fa60d6cbc62";
