@@ -18,7 +18,7 @@ export class App extends Component {
     page: 1,
     isOpenModal: false,
     modalData: null,
-    noImgResponse: false,
+    noImagesResponse: false,
   }
 
   openModal = (modData) => {
@@ -57,8 +57,8 @@ export class App extends Component {
         
       const data = await fetchImages(query, page);
         
-      if (data.hits.length === 0 && !this.state.noImgResponse) {
-      this.setState({noImgResponse: true});
+      if (data.hits.length === 0 && !this.state.noImagesResponse) {
+      this.setState({noImagesResponse: true});
         Notiflix.Notify.info('Sorry, there are no images matching your search query', {position: 'center-center', width: '460px', fontSize: '16px'});
       };
 
