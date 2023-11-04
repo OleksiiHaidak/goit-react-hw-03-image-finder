@@ -81,9 +81,8 @@ export class App extends Component {
 
 
   handleSubmit = (query) => {
-    this.setState({ query, page: 1 }, () => {
-      this.FetchImages();
-    });};
+    this.setState({ query, page: 1 }
+    )};
 
 
   handleInputChange = evt => {
